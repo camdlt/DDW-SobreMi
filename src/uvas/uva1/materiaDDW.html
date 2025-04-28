@@ -5,75 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño y Desarrollo Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../scss/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Diseño y Desarrollo Web</h1>
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../avisos.html">Avisos</a></li>
-                <li><a href="/src/uvas/uva1/sobremi.html">Sobre Mí</a></li>
-                <li><a href="../../materias-2025.html">Materias 2025</a></li>
-                <li><a href="../../contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white py-4 mb-4">
+        <div class="container">
+            <nav class="mb-4">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../avisos.html">Avisos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/src/uvas/uva1/sobremi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../materias-2025.html">Materias
+                            2025</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1 class="mb-3 text-center">Diseño y Desarrollo Web</h1>
+        </div>
     </header>
-    <main>
-        <section id="descripcion">
-            <h2>Descripción de la Materia</h2>
-            <p>
-                La materia Diseño y Desarrollo Web tiene como objetivo enseñar los conceptos fundamentales del diseño y desarrollo de sitios web, 
-                incluyendo herramientas, técnicas y tecnologías modernas para crear interfaces de usuario efectivas y funcionales.
-            </p>
-        </section>
 
-        <section id="contenidos">
-            <h2>Contenidos</h2>
-            <ul>
-                <li>Concepto: Red informática mundial (World Wide Web); Página web; Navegador web; Servidor web.</li>
-                <li>Lenguajes web.</li>
-                <li>El diseño web: conceptos; el proceso de diseño; prototipado; técnicas de maquetado; herramientas.</li>
-                <li>El proceso de validación del diseño.</li>
-                <li>Conceptos de usabilidad y experiencia de usuario.</li>
-                <li>Desarrollo de interfaces de usuario: conceptos; el proceso de desarrollo.</li>
-                <li>Comprensión y utilización de tecnologías como: HTML (HyperText Markup Language); CSS3 (Cascading Style Sheets); DOM (Document Object Model); JavaScript.</li>
-                <li>Eventos: tipos; gestión y manejo de eventos.</li>
-                <li>Obtención, gestión y mantenimiento de dominio y hosting.</li>
-                <li>Despliegue de producto.</li>
-            </ul>
-        </section>
+    <main class="container mb-5">
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div class="col-md-6">
+                <!-- Card para Fechas de Exámenes -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="mb-0">Fechas de Exámenes</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Primer parcial: 29 de abril</li>
+                            <li class="list-group-item">Segundo parcial: 24 de junio</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card para Bibliografía -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="mb-0">Bibliografía</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Aquí se incluirán los libros y recursos recomendados para el estudio de Diseño y Desarrollo
+                            Web.</p>
+                    </div>
+                </div>
+            </div>
 
-        <section id="bibliografia">
-            <h2>Bibliografía</h2>
-            <p>Aquí se incluirán los libros y recursos recomendados para el estudio de Diseño y Desarrollo Web.</p>
-        </section>
-        
-        <section id="fechas-examenes">
-            <h2>Fechas de Exámenes</h2>
-            <ul>
-                <li>Primer parcial: 29 de abril</li>
-                <li>Segundo parcial: 24 de junio</li>
-            </ul>
-        </section>
-        
-        <section id="actividades-uvas">
-            <h2>Actividades UVAs</h2>
-            <h3>UVA1</h3>
-            <ul>
-                <li><a href="./sobremi.html" target="_blank">HTML - Introducción</a></li>
-                <li><a href="./materiaDDW.html" target="_blank">HTML - Etiquetas</a></li>
-                <li><a href="../../../index.html" target="_blank">Ejercicio integrador 📝(obligatorio)</a></li>
-            </ul>
-            <h3>UVA2</h3>
-            <ul>
-                <li><a href="../uva2/starWars.html" target="_blank">Formato de texto</a></li>
-            </ul>
-        </section>
+            <!-- Columna derecha -->
+            <div class="col-md-6">
+
+
+                <!-- Card para Actividades UVAs -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="mb-0">Actividades UVAs</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="mb-2">UVA1</h3>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item"><a href="./sobremi.html" target="_blank">HTML - Introducción</a>
+                            </li>
+                            <li class="list-group-item"><a href="./materiaDDW.html" target="_blank">HTML - Etiquetas</a>
+                            </li>
+                            <li class="list-group-item"><a href="../../../index.html" target="_blank">Ejercicio
+                                    integrador 📝(obligatorio)</a></li>
+                        </ul>
+                        <h3 class="mb-2">UVA2</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="../uva2/starWars.html" target="_blank">Formato de
+                                    texto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2025 Diseño y Desarrollo Web. Todos los derechos reservados.</p>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Diseño y Desarrollo Web. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
