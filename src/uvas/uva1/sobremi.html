@@ -5,56 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí - Camila de la Torre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../scss/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Bienvenidos al sitio de Camila</h1>
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../avisos.html">Avisos</a></li>
-                <li><a href="./sobremi.html">Sobre Mí</a></li>
-                <li><a href="../../materias-2025.html">Materias 2025</a></li>
-                <li><a href="../../contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white py-4 mb-4">
+        <div class="container">
+            <nav class="mb-4">
+                <ul class="nav justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../avisos.html">Avisos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="./sobremi.html">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../materias-2025.html">Materias 2025</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1 class="mb-3 text-center">Bienvenidos al sitio de Camila</h1>
+   </div>
     </header>
-    <main>
-        <img src="../../img/profilePicture.jpeg" alt="Fotografía de perfil" style="width: 200px; height: auto;">
-        <h2>Sobre mí</h2>
-        <p>
-            ¡Hola! Mi nombre es Camila de la Torre, tengo 29 años y soy de Argentina. Desde pequeña, siempre me ha
-            fascinado la tecnología y cómo esta puede transformar nuestras vidas. Mi interés por la informática comenzó
-            cuando trabajaba en Mercado Libre en el área de atención al cliente. Fue allí donde descubrí el mundo del
-            desarrollo y la tecnología, y me terminó fascinando tanto que decidí cambiar de rumbo profesional.
-        </p>
-        <p>
-            Antes de eso, estudiaba Actuario en Administración, pero al descubrir mi pasión por la tecnología, tomé la
-            decisión de cambiar de carrera y comenzar a estudiar la Licenciatura en Gestión de Tecnología de la
-            Información. Este cambio me permitió combinar mi interés por la lógica y la creatividad, dos aspectos que
-            disfruto mucho.
-        </p>
-        <p>
-            Actualmente, trabajo como Project Leader de un equipo de SRE (Site Reliability Engineering), donde diseñamos
-            frameworks y herramientas que ayudan a los equipos a cumplir con los estándares de resiliencia que
-            esperamos, mientras nos adaptamos a las herramientas y flujos de trabajo. Este rol me ha permitido
-            desarrollar soluciones innovadoras y colaborar con equipos multidisciplinarios para garantizar la calidad y
-            estabilidad de los sistemas.
-        </p>
-        <p>
-            En mi tiempo libre, disfruto leer libros de ciencia ficción, practicar yoga y explorar nuevas herramientas
-            de diseño. También me interesa la inteligencia artificial y cómo esta puede integrarse en el desarrollo web
-            para crear soluciones más inteligentes y personalizadas.
-        </p>
-        <p>
-            Mi objetivo profesional es seguir creciendo en el ámbito del desarrollo web y liderar proyectos innovadores
-            que tengan un impacto positivo en la sociedad.
-        </p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Camila de la Torre. Todos los derechos reservados.</p>
+
+    <main class="container mb-5">
+        <div class="card shadow-sm border-0 bg-light p-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+              <img src="../../img/profilePicture.jpeg" alt="Fotografía de perfil" class="img-fluid rounded-circle" style="max-width: 200px;">
+            </div>
+            <div class="col-md-8">
+              <h2 class="mb-2 text-primary">Camila de la Torre</h2>
+              <h5 class="text-secondary mb-4">Estudiante de Gestión de Tecnología de la Información</h5>
+              <p>Soy Camila de la Torre, argentina de 29 años, estudiante de la Licenciatura en Gestión de Tecnología de la Información. Mi trayectoria comenzó en atención al cliente en Mercado Libre, donde descubrí mi pasión por la tecnología y decidí reorientar mi carrera profesional.</p>
+              <p>Actualmente, me desempeño como Project Leader en un equipo de Site Reliability Engineering (SRE), liderando iniciativas que mejoran la resiliencia de sistemas y fomentan buenas prácticas de confiabilidad.</p>
+              <p>Me considero una persona curiosa y entusiasta de los nuevos desafíos. Disfruto de la ciencia ficción, el yoga, el diseño visual y la inteligencia artificial aplicada al desarrollo web. Mi objetivo es liderar proyectos tecnológicos que generen un impacto positivo en la sociedad.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Camila de la Torre. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

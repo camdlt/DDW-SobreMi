@@ -1,0 +1,135 @@
+:root {
+  --bs-primary: #5A4E83;   /* Púrpura suave (Botones, llamados a la acción) */
+  --bs-secondary: #FFB6B9; /* Rosa suave (Fondos suaves, bordes) */
+  --bs-light: #E3F2F1;     /* Azul muy suave (Fondos claros, bordes suaves) */
+  --bs-info: #F9D56B;      /* Amarillo dorado (Textos o detalles llamativos) */
+  --bs-dark: #2A2A2A;      /* Gris oscuro (Textos principales, contraseñas) */
+}
+
+
+/* Ahora sobreescribimos las clases importantes */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.nav-link.active {
+  color: var(--bs-primary) !important;
+}
+
+/* Cabecera de la tabla */
+.table-header-rosa {
+  background-color: var(--bs-light) !important;
+  color: var(--bs-dark) !important;
+}
+
+/* Bordes de la tabla */
+table {
+  border: 1px solid var(--bs-dark);
+}
+
+/* Filas de la tabla */
+tr {
+  background-color: var(--bs-light);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bs-secondary);  /* Alternando filas con color rojo suave */
+}
+
+tr:hover {
+  background-color: var(--bs-info);  /* Fondo coral suave al pasar el mouse */
+}
+
+
+
+.materia-enlace:hover {
+  text-decoration: underline;
+  color: var(--bs-dark);
+}
+
+html, body {
+  height: 100%; /* Asegura que el html y body ocupen toda la altura de la ventana */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-header {
+  background-color: var(--bs-light);
+}
+
+
+
+/* Mejorar contraste en botones y enlaces */
+.btn-primary:hover {
+  background-color: var(--bs-dark) !important;
+  border-color: var(--bs-dark) !important;
+}
+
+.card-footer {
+  background-color: var(--bs-info);
+  color: var(--bs-dark);
+}
+
+/* Personalización de la cabecera de la tabla */
+.table th {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--bs-secondary);
+}
+
+.table tbody tr:hover {
+  background-color: var(--bs-info);
+}
+.input-group-text {
+  background-color: #e9ecef;
+}
+
+.input-group-text i {
+  color: #007bff;
+}
+
+input, textarea {
+  border-radius: 5px;
+}
+
+#formulario-contacto {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.btn-primary {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
