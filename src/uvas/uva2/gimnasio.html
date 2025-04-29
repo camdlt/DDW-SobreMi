@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio IndFit</title>
+    <link rel="stylesheet" href="../../scss/gimnasio.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gimnasio IndFit</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section">
+        <h2>Entrená con nosotros</h2>
+        <p>Bienvenido a IndFit, tu gimnasio de confianza. Elegí tu plan y comenzá a transformar tu cuerpo.</p>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhlJTIwZ3ltfGVufDB8fDB8fHww" alt="Gimnasio" class="main-image">
+    </section>
+
+    <section id="planes" class="section">
+        <h2>Nuestros Planes</h2>
+        <ul>
+            <li><strong>Plan Básico:</strong> Acceso solo a musculación</li>
+            <li><strong>Plan Completo:</strong> Acceso a todas las áreas y clases grupales</li>
+            <li><strong>Plan Completo con piscina:</strong> Acceso a todas las áreas incluyendo la piscina</li>
+            <li><strong>Plan Premium:</strong> Incluye entrenador personal</li>
+        </ul>
+    </section>
+
+    <section id="registro" class="section">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="plan">Elegí tu plan:</label>
+            <select id="plan" name="plan">
+                <option value="basico">Básico</option>
+                <option value="completo">Completo</option>
+                <option value="completo">Completo con piscina</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <label for="horario">Elegí tu horario preferido:</label>
+            <select id="horario" name="horario">
+                <option value="mañana">Mañana (6:00 - 11:00)</option>
+                <option value="mañana">Mediodía (11:00 - 15:00)</option>
+                <option value="tarde">Tarde (15:00 - 19:00)</option>
+                <option value="noche">Noche (19:00 - 22:00)</option>
+            </select>
+
+            <button type="submit">Registrarme</button>
+        </form>
+    </section>
+
+    <footer id="contacto">
+        <p>📍 Dirección: Av. Testeo 1234, Martínez | 📞 Tel: 011-1234-5678</p>
+    </footer>
+
+</body>
+</html>
