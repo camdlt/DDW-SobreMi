@@ -1,0 +1,240 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #6A1B9A;
+}
+
+a:hover {
+    color: #D32F2F;
+}
+
+header {
+    background-color: #D32F2F;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 42px;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    color: #D32F2F;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#menu {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5% 30px 1.5%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Efecto hover para el menú */
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img:hover {
+    transform: scale(1.05); 
+}
+
+#special-offers {
+    background-color: #e2ddd5; 
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#special-offers h3 {
+    text-align: center;
+    font-size: 32px;
+    color: #D32F2F;
+    margin-bottom: 30px;
+}
+
+#special-offers .menu-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5% 20px 1.5%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto {
+    background-color: #F5F5F5;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+#contacto a {
+    color: #D32F2F;
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+#galeria {
+    padding: 50px 20px;
+}
+
+#galeria h2 {
+    font-size: 36px;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.image-gallery img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #6A1B9A;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    #special-offers .menu-item {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,9 +1,9 @@
 :root {
-  --bs-primary: #5A4E83;   /* Púrpura suave (Botones, llamados a la acción) */
-  --bs-secondary: #FFB6B9; /* Rosa suave (Fondos suaves, bordes) */
-  --bs-light: #E3F2F1;     /* Azul muy suave (Fondos claros, bordes suaves) */
-  --bs-info: #F9D56B;      /* Amarillo dorado (Textos o detalles llamativos) */
-  --bs-dark: #2A2A2A;      /* Gris oscuro (Textos principales, contraseñas) */
+  --bs-primary: #540936;   /* Naranja */
+  --bs-secondary: #F3D6D3; /* Rosa claro */
+  --bs-light: #B4D9E4;     /* Azul claro */
+  --bs-info: #FFB347;      /* Amarillo cálido (para los círculos amarillos) */
+  --bs-dark: #2D1A45;      /* Púrpura oscuro (para detalles y texto) */
 }
 
 
@@ -74,6 +74,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  background-color: var(--bs-secondary) !important;
 }
 
 .card-header {
@@ -88,23 +89,20 @@ footer {
   border-color: var(--bs-dark) !important;
 }
 
-.card-footer {
-  background-color: var(--bs-info);
-  color: var(--bs-dark);
-}
-
 /* Personalización de la cabecera de la tabla */
+/* Encabezado de la tabla */
 .table th {
-  background-color: var(--bs-primary);
-  color: white;
+  background-color: var(--bs-light) !important; /* Usamos --bs-secondary para el encabezado */
+  color: black; /* Aseguramos que el texto sea blanco */
 }
 
+/* Filas del cuerpo de la tabla */
 .table tbody tr:nth-child(even) {
-  background-color: var(--bs-secondary);
+  background-color: var(--bs-light); /* Color para las filas pares */
 }
 
 .table tbody tr:hover {
-  background-color: var(--bs-info);
+  background-color: var(--bs-info); /* Color al pasar el ratón sobre las filas */
 }
 .input-group-text {
   background-color: #e9ecef;
@@ -132,4 +130,79 @@ input, textarea {
   border-radius: 50px;
   padding: 10px 20px;
   font-weight: bold;
+}
+
+
+/* Contenedor principal que incluye la imagen y el contenido */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 500px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Imagen de fondo a la izquierda */
+.hero-image-container {
+  flex: 1;
+}
+
+.hero-image {
+  width: 80%;  /* La imagen ocupará el 100% del contenedor */
+  height: 80%;  /* La imagen ocupará el 100% de la altura del contenedor */
+  object-fit: cover;  /* Asegura que la imagen cubra completamente el área sin deformarse */
+  border-radius: 8px;  /* Bordes redondeados */
+}
+
+/* Contenido principal a la derecha */
+.hero-content {
+  flex: 1;
+  padding: 40px;
+  color: #540936;
+  border-radius: 8px;
+}
+
+/* Estilo para la tabla */
+table {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+thead {
+  background-color: var(--bs-secondary);
+  color: white;
+}
+
+.table-header-index {
+  background-color: var(--bs-secondary);
+}
+
+/* Ajustes de la tabla de materias */
+table th,
+table td {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* En pantallas pequeñas, hacer que la imagen y el contenido se apilen */
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajustar la imagen para que ocupe el 100% de su contenedor */
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* El contenido debe estar centrado */
+  .hero-content {
+    width: 100%;
+    padding: 20px;
+  }
 }
