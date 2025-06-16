@@ -1,0 +1,13 @@
+#ticket-page .contador {
+  width: 2.5rem;
+  text-align: center;
+}
+
+#ticket-page .ticket-card button {
+  width: 2.5rem;
+}
+
+.carrito-resumen span {
+  min-width: 3rem;
+  text-align: right;
+}
