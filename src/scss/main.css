@@ -120,6 +120,38 @@ textarea {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+#formulario-contacto input,
+#formulario-contacto textarea {
+  border: 2px solid var(--bs-light);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--bs-dark);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+}
+
+#formulario-contacto input:focus,
+#formulario-contacto textarea:focus {
+  border-color: var(--bs-info);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bs-info, #FFB34733);
+}
+
+#formulario-contacto label {
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+#formulario-contacto .input-group-text {
+  background: var(--bs-light);
+  color: var(--bs-primary);
+  border: 2px solid var(--bs-light);
+}
+
+#form-feedback {
+  margin-bottom: 1rem;
+}
+
 .form-label {
   font-weight: 500;
 }
