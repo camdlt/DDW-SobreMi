@@ -10,20 +10,29 @@
 </head>
 
 <body>
-    <header class="bg-primary text-white py-4 mb-4">
+    <header class="bg-primary custom-text-secondary py-4 mb-4">
         <div class="container">
-            <nav class="mb-4">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="src/avisos.html">AVISOS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./src/uvas/uva1/sobremi.html">SOBRE MÍ</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="src/materias-2025.html">MATERIAS 2025</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="src/contacto.html">CONTACTO</a></li>
-                </ul>
+          <!-- Menú de navegación -->
+          <nav class="mb-4">
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a class="nav-link custom-text-secondary" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link custom-text-secondary" href="src/avisos.html">AVISOS</a></li>
+              <li class="nav-item"><a class="nav-link custom-text-secondary" href="./src/uvas/uva1/sobremi.html">SOBRE MÍ</a></li>
+              <li class="nav-item"><a class="nav-link custom-text-secondary" href="src/materias-2025.html">MATERIAS 2025</a></li>
+              <li class="nav-item"><a class="nav-link custom-text-secondary" href="src/contacto.html">CONTACTO</a></li>
+            </ul>
           </nav>
+          
+          <!-- Botones de modo claro y oscuro -->
+          <div class="d-flex justify-content-end gap-2 mb-2">
+            <button id="btn-modo-claro" type="button" class="btn btn-outline-secondary btn-sm">Modo Claro</button>
+            <button id="btn-modo-oscuro" type="button" class="btn btn-outline-dark btn-sm">Modo Oscuro</button>
+          </div>
+    
+          <!-- Título de la página -->
           <h1 class="mb-3 text-center">Organización Cursada - 1º Cuatrimestre 2025</h1>
-     </div>
-    </header>
+        </div>
+      </header>
  
   <main class="container mb-5">
     <!-- Contenedor con la imagen a la izquierda y el contenido a la derecha -->
@@ -46,9 +55,9 @@
                 <th>Aula</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>GESTIÓN DE PERSONAS EN ORGANIZACIONES DE TECNOLOGÍA</td>
+            <tbody class="custom-div-background">
+              <tr class="custom-div-background">
+                <td lass="custom-div-background">GESTIÓN DE PERSONAS EN ORGANIZACIONES DE TECNOLOGÍA</td>
                 <td>18:30 - 22:30</td>
                 <td>Lunes</td>
                 <td>Aula B006 - Belgrano</td>
@@ -74,10 +83,10 @@
 
   <footer class="text-center py-3">
     <div class="container">
-      <p class="mb-0">&copy; 2025 Organización Cursada. Todos los derechos reservados.</p>
+      <p class="mb-0 text-primary">&copy; 2025 Organización Cursada. Todos los derechos reservados.</p>
     </div>
   </footer>
-
+  <script src="src/scripts/modo.js"></script>
 </body>
 
 </html>

@@ -2,54 +2,69 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí - Camila de la Torre</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../scss/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí - Camila de la Torre</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../scss/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="bg-primary text-white py-4 mb-4">
-        <div class="container">
-            <nav class="mb-4">
-                <ul class="nav justify-content-center">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="../../../index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../../avisos.html">AVISOS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./sobremi.html">SOBRE MÍ</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../../materias-2025.html">MATERIAS 2025</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="../../contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <h1 class="mb-3 text-center">Bienvenidos al sitio de Camila</h1>
-   </div>
-    </header>
+  <header class="bg-primary custom-text-secondary py-4 mb-4">
+    <div class="container">
+      <!-- Menú de navegación -->
+      <nav class="mb-4">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link custom-text-secondary" href="../../../index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link custom-text-secondary" href="../../avisos.html">AVISOS</a></li>
+          <li class="nav-item"><a class="nav-link custom-text-secondary" href="./sobremi.html">SOBRE MÍ</a></li>
+          <li class="nav-item"><a class="nav-link custom-text-secondary" href="../../materias-2025.html">MATERIAS
+              2025</a></li>
+          <li class="nav-item"><a class="nav-link custom-text-secondary" href="../../contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
 
-    <main class="container mb-5">
-        <div class="card shadow-sm border-0 bg-light p-4">
-          <div class="row g-4 align-items-center">
-            <div class="col-md-4 text-center">
-              <img src="../../img/profilePicture.jpeg" alt="Fotografía de perfil" class="img-fluid rounded-circle" style="max-width: 200px;">
-            </div>
-            <div class="col-md-8">
-              <h2 class="mb-2 text-primary">Camila de la Torre</h2>
-              <h5 class="text-secondary mb-4">Estudiante de Gestión de Tecnología de la Información</h5>
-              <p>Soy Camila de la Torre, argentina de 29 años, estudiante de la Licenciatura en Gestión de Tecnología de la Información. Mi trayectoria comenzó en atención al cliente en Mercado Libre, donde descubrí mi pasión por la tecnología y decidí reorientar mi carrera profesional.</p>
-              <p>Actualmente, me desempeño como Project Leader en un equipo de Site Reliability Engineering (SRE), liderando iniciativas que mejoran la resiliencia de sistemas y fomentan buenas prácticas de confiabilidad.</p>
-              <p>Me considero una persona curiosa y entusiasta de los nuevos desafíos. Disfruto de la ciencia ficción, el yoga, el diseño visual y la inteligencia artificial aplicada al desarrollo web. Mi objetivo es liderar proyectos tecnológicos que generen un impacto positivo en la sociedad.</p>
-            </div>
-          </div>
-        </div>
-      </main>
-      
-    <footer class="text-center py-3">
-        <div class="container">
-            <p>&copy; 2025 Camila de la Torre. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+      <!-- Botones de modo claro y oscuro -->
+      <div class="d-flex justify-content-end gap-2 mb-2">
+        <button id="btn-modo-claro" type="button" class="btn btn-outline-secondary btn-sm">Modo Claro</button>
+        <button id="btn-modo-oscuro" type="button" class="btn btn-outline-dark btn-sm">Modo Oscuro</button>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Título de la página -->
+      <h1 class="mb-3 text-center">Bienvenidos al sitio de Camila</h1>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <div class="card shadow-sm border-0 bg-light p-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="../../img/profilePicture.jpeg" alt="Fotografía de perfil" class="img-fluid rounded-circle"
+            style="max-width: 200px;">
+        </div>
+        <div class="col-md-8">
+          <h2 class="mb-2 text-secondary">Camila de la Torre</h2>
+          <h5 class="text-secondary mb-4">Estudiante de Gestión de Tecnología de la Información</h5>
+          <p class="text-secondary" >Soy Camila de la Torre, argentina de 29 años, estudiante de la Licenciatura en Gestión de Tecnología de la
+            Información. Mi trayectoria comenzó en atención al cliente en Mercado Libre, donde descubrí mi pasión por la
+            tecnología y decidí reorientar mi carrera profesional.</p>
+          <p class="text-secondary" >Actualmente, me desempeño como Project Leader en un equipo de Site Reliability Engineering (SRE), liderando
+            iniciativas que mejoran la resiliencia de sistemas y fomentan buenas prácticas de confiabilidad.</p>
+          <p class="text-secondary" >Me considero una persona curiosa y entusiasta de los nuevos desafíos. Disfruto de la ciencia ficción, el
+            yoga, el diseño visual y la inteligencia artificial aplicada al desarrollo web. Mi objetivo es liderar
+            proyectos tecnológicos que generen un impacto positivo en la sociedad.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0 text-primary">&copy; 2025 Organización Cursada. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="../../scripts/modo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
