@@ -1,13 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
 :root {
-  --bs-primary: #540936;
-  --bs-secondary: #F3D6D3;
+  --bs-primary: #F3D6D3;
+  --bs-secondary: #540936;
   --bs-light: #B4D9E4;
   --bs-info: #FFB347;
   --bs-dark: #2D1A45;
+  --bs-second-background: #F9F9F9;
+  --bs-heading-color: #2D1A45;
+  --bg-light: #FFFFFF;
+  --bs-table-bg: #ffffff;
+  --bs-table-striped-bg: var(--bs-light);
+  /* fondo filas alternadas */
+  --bs-table-striped-color: var(--bs-dark);
+  /* texto en filas alternadas */
+  --bs-table-hover-bg: var(--bs-info);
+  /* fondo al hacer hover */
+  --bs-table-hover-color: var(--bs-dark);
+  --bs-table-active-bg: var(--bs-secondary);
+  --bs-table-active-color: #fff;
 }
 
+/* Tema claro */
+:root.modo-claro {
+  --bs-primary: #F3D6D3;
+  --bs-secondary: #540936;
+  --bs-light: #B4D9E4;
+  --bs-info: #FFB347;
+  --bs-dark: #2D1A45;
+  --bs-second-background: #F9F9F9;
+  --bs-heading-color: #2D1A45;
+  --bg-light: #FFFFFF;
+  --bs-table-bg: #ffffff;
+  --bs-table-striped-bg: var(--bs-light);
+  /* fondo filas alternadas */
+  --bs-table-striped-color: var(--bs-dark);
+  /* texto en filas alternadas */
+  --bs-table-hover-bg: var(--bs-info);
+  /* fondo al hacer hover */
+  --bs-table-hover-color: var(--bs-dark);
+  --bs-table-active-bg: var(--bs-secondary);
+  --bs-table-active-color: #fff;
+}
+
+/* Tema oscuro */
+:root.modo-oscuro {
+  --bs-primary: black;
+  --bs-secondary: #F3D6D3;
+  --bs-dark: #B4D9E4;
+  --bs-info: #FFB347;
+  --bs-light: #2D1A45;
+  --bs-background: #1e0313;
+  --bs-second-background: #1a0411;
+  --bs-heading-color: #F3D6D3;
+  --bg-light: #1a0c1d;
+  --bs-table-bg: var(--bs-dark);
+  --bs-table-striped-bg: var(--bs-secondary);
+  /* filas alternadas en dark */
+  --bs-table-striped-color: var(--bs-light);
+  --bs-table-hover-bg: var(--bs-info);
+  --bs-table-hover-color: var(--bs-dark);
+  --bs-table-active-bg: var(--bs-primary);
+  --bs-table-active-color: var(--bs-secondary);
+  --bs-list-group-bg: var(--bs-background);
+}
+
+body {
+  background-color: var(--bs-background);
+}
+
+.bg-light {
+  background-color: var(--bs-second-background) !important;
+}
+
+.custom-div-background {
+  background-color: var(--bs-second-background) !important;
+  color: var(--bs-secondary) !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  background-color:var(--bs-second-background) !important; 
+  color: var(--bs-secondary) !important;
+}
+.table>:not(caption)>*>* {
+  background-color:var(--bs-primary) !important;
+  color:var(--bs-secondary) !important;
+}
+.custom-text-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+.text-secondary {
+  color: var(--bs-secondary) !important;
+}
 
 .btn-primary {
   background-color: var(--bs-primary) !important;
@@ -90,7 +175,7 @@ footer {
 
 .table th {
   background-color: var(--bs-light) !important;
-  color: black;
+  color: var(--bs-dark) !important;
 }
 
 .table tbody tr:nth-child(even) {
@@ -115,9 +200,11 @@ textarea {
 }
 
 #formulario-contacto {
-  background-color: #f9f9f9;
+  background-color: var(--bs-second-background);
+  ;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--bs-dark);
 }
 
 #formulario-contacto input,
@@ -138,13 +225,13 @@ textarea {
 }
 
 #formulario-contacto label {
-  color: var(--bs-primary);
+  color: var(--bs-secondary);
   font-weight: 600;
 }
 
 #formulario-contacto .input-group-text {
   background: var(--bs-light);
-  color: var(--bs-primary);
+  color: var(--bs-secondary);
   border: 2px solid var(--bs-light);
 }
 
@@ -163,12 +250,52 @@ textarea {
 }
 
 
+/* Botones modo claro/oscuro */
+#btn-modo-claro, #btn-modo-oscuro {
+  border-radius: 30px;
+  padding: 8px 22px;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(84,9,54,0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+#btn-modo-oscuro {
+  background: linear-gradient(90deg, var(--bs-dark) 60%, var(--bs-primary) 100%);
+  color: var(--bs-primary);
+  border: 2px solid var(--bs-dark);
+}
+
+#btn-modo-claro {
+  border: 2px solid #F3D6D3;
+  background: linear-gradient(90deg, #B4D9E4, 60%, #F3D6D3 100%);
+  color: #2D1A45;
+}
+
+#btn-modo-claro:hover, #btn-modo-oscuro:hover {
+  background: var(--bs-info);
+  color: var(--bs-dark);
+  border-color: var(--bs-info);
+  box-shadow: 0 4px 16px rgba(255,179,71,0.15);
+}
+.modo-oscuro #btn-modo-oscuro {
+  background: linear-gradient(90deg, var(--bs-background) 60%, var(--bs-dark) 100%);
+  color: var(--bs-secondary);
+  border: 2px solid var(--bs-secondary);
+}
+.modo-oscuro #btn-modo-claro:hover, .modo-oscuro #btn-modo-oscuro:hover {
+  background: var(--bs-info);
+  color: var(--bs-dark);
+  border-color: var(--bs-info);
+}
+
 .content-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 500px;
-  background-color: #f9f9f9;
+  background-color: var(--bs-second-background);
+  ;
   flex-wrap: wrap;
 }
 
